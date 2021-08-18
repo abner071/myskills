@@ -4,6 +4,12 @@ import { Home } from './src/pages/Home';
 import SplashScreen from 'react-native-splash-screen';
 import codePush from "react-native-code-push";
 
+import * as Sentry from "@sentry/react-native";
+
+Sentry.init({
+  dsn: "https://c6617feb024443d2a198c03fda3b9d1f@o964568.ingest.sentry.io/5915030",
+});
+
 function App(){
 
   useEffect(() => {
